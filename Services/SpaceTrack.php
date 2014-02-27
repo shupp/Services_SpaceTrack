@@ -141,6 +141,8 @@ class Services_SpaceTrack
             );
         }
 
+        $this->isAuthenticated = true;
+
         curl_close($ch);
     }
 
