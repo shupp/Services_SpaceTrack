@@ -1,0 +1,6 @@
+<phpunit bootstrap="bootstrap.php"  colors="true">
+    <logging>
+        <log type="coverage-html" target="coverage" charset="UTF-8"
+            yui="true" highlight="true" lowUpperBound="90" highLowerBound="100"/>
+    </logging>
+</phpunit>
