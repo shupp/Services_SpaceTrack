@@ -111,8 +111,8 @@ class Services_SpaceTrack
     public function getLatestTLE($noradID = 25544)
     {
         return $this->sendRequest(
-            '/basicspacedata/query/class/tle/format/tle/NORAD_CAT_ID/'
-            . $noradID . '/orderby/EPOCH%20desc/limit/1'
+            '/basicspacedata/query/class/tle_latest/ORDINAL/1/NORAD_CAT_ID/'
+            . $noradID .  '/orderby/TLE_LINE1%20ASC/format/tle'
         );
     }
 
